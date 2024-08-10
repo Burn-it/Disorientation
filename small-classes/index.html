@@ -197,8 +197,8 @@
                 return;
             }
 
-            // const i = Math.floor(Math.random() * quotes.length);
-            i = quotes.findIndex(q => q.length > 1200);
+            const i = Math.floor(Math.random() * quotes.length);
+            // i = quotes.findIndex(q => q.length > 1200);
             const quote = quotes[i];
             wrapper.innerHTML = render(quote, i + 1, quotes.length);
         });
