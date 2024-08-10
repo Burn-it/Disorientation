@@ -197,7 +197,8 @@
                 return;
             }
 
-            const i = Math.floor(Math.random() * quotes.length);
+            // const i = Math.floor(Math.random() * quotes.length);
+            i = quotes.findIndex(q => q.length > 1200);
             const quote = quotes[i];
             wrapper.innerHTML = render(quote, i + 1, quotes.length);
         });
@@ -238,6 +239,7 @@
             font-weight: 400;
             font-style: normal;
             height: 50vh;
+            overflow-y: scroll;
             box-sizing: border-box;
         }
 
