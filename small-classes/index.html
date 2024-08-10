@@ -191,7 +191,12 @@
             "Love the class! the smaller the class the better and more help from staff! honestly the best!",
             "It’s an incredibly valuable course taught by an incredibly passionate team."
         ];
-        document.body.addEventListener('click', () => {
+        document.body.addEventListener('click', (event) => {
+            // if a link or child of a link was clicked, do nothing
+            if (event.target.tagName === 'A' || event.target.closest('a')) {
+                return;
+            }
+
             const i = Math.floor(Math.random() * quotes.length);
             const quote = quotes[i];
             wrapper.innerHTML = render(quote, i + 1, quotes.length);
