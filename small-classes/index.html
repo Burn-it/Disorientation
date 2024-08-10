@@ -18,16 +18,22 @@
     what they think about their small classes.
     <br>
     <br>
-    <strong>
-        Tap to see what they have to say.
-    </strong>
     <br>
+
     <div class="wrapper">
+        <strong>
+            Tap to see what they have to say.
+        </strong>
     </div>
     <script>
         let render = (quote, i, total) => `
-        <h1 class="question">How was your experience with the small courses?</h1>
-        <p class="quote" style="font-size: ${Math.max(0.8, 2.5 - Math.sqrt(quote.length / 150).toFixed(2)) * 16}px">${quote}</p><span class="position">${i}/${total}</span>`
+        <strong>Tap to see more.</strong>
+        <h1 class="question">How is your experience with small courses?</h1>
+        <p class="quote" style="font-size: ${Math.max(0.8, 2.5 - Math.sqrt(quote.length / 150).toFixed(2)) * 16}px">${quote}</p>
+        <br>
+        <span class="position">${i}/${total}</span>
+        <br>
+        `
         let wrapper = document.querySelector('.wrapper');
         const quotes = [
             "Much better than the larger courses in first year, much more engaging",
@@ -209,7 +215,6 @@
         }
 
         .question {
-            /* color: rgb(129, 54, 0); */
             color: #b48751;
             font-family: "Playfair Display", serif;
             font-optical-sizing: auto;
@@ -223,32 +228,21 @@
             font-optical-sizing: auto;
             font-weight: 400;
             font-style: normal;
+            height: 50vh;
+            box-sizing: border-box;
         }
 
         .position {
-            /* position: fixed;
-            bottom: 0;
-            height: 1rem; */
             color: #6d5230;
-            /* color: white; */
             padding: 0.5rem 1rem;
             border: none;
             border-radius: 0.5rem;
             cursor: pointer;
-            /* font-family: "Arial", sans-serif; */
             font-optical-sizing: auto;
             font-weight: 800;
             font-style: normal;
             background: none;
         }
-
-        /* .another:hover {
-            text-decoration: underline;
-        } */
-
-        /* .another::after {
-            content: "...";
-        } */
     </style>
 </body>
 
