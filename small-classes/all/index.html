@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <a href="all/">all</a>
+    <a href="../" style="">return</a>
     <br>
     In response to small-class cuts the University of Auckland Administration is cooking up, students have let us know
     what they think about their small classes.
@@ -24,16 +24,13 @@
     <br>
     <br>
 
+    <h1 class="question">How is your experience with small courses?</h1>
     <div class="wrapper">
-        <strong>
-            Tap to see what they have to say.
-        </strong>
     </div>
     <script>
+        // <strong>Tap to see more.</strong>
         let render = (quote, i, total) => `
-        <strong>Tap to see more.</strong>
-        <h1 class="question">How is your experience with small courses?</h1>
-        <p class="quote" style="font-size: ${Math.max(0.8, 2.5 - Math.sqrt(quote.length / 150).toFixed(2)) * 16}px">${quote}</p>
+        <p class="quote" style="font-size: ${Math.max(0.8, 2.5 - Math.sqrt(quote.length / 150).toFixed(2)) * 16}px; height: auto; margin: 8rem;">${quote}</p>
         <br>
         <span class="position">${i}/${total}</span>
         <br>
@@ -191,11 +188,12 @@
             "Love the class! the smaller the class the better and more help from staff! honestly the best!",
             "It’s an incredibly valuable course taught by an incredibly passionate team."
         ];
-        document.body.addEventListener('click', () => {
-            const i = Math.floor(Math.random() * quotes.length);
-            const quote = quotes[i];
-            wrapper.innerHTML = render(quote, i + 1, quotes.length);
-        });
+        wrapper.innerHTML = quotes.reduce((acc, quote, i) => acc + render(quote, i + 1, quotes.length), '');
+        // document.body.addEventListener('click', () => {
+        //     const i = Math.floor(Math.random() * quotes.length);
+        //     const quote = quotes[i];
+        //     wrapper.innerHTML = render(quote, i + 1, quotes.length);
+        // });
     </script>
     <style>
         body {
