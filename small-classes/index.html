@@ -27,7 +27,7 @@
     <script>
         let render = (quote, i, total) => `
         <h1 class="question">How was your experience with the small courses?</h1>
-        <p class="quote" style="font-size: ${Math.max(0.8, 2.5 - Math.sqrt(quote.length / 150).toFixed(2))}em">${quote}</p><span class="position">${i}/${total}</span>`
+        <p class="quote" style="font-size: ${Math.max(0.8, 2.5 - Math.sqrt(quote.length / 150).toFixed(2)) * 16}px">${quote}</p><span class="position">${i}/${total}</span>`
         let wrapper = document.querySelector('.wrapper');
         const quotes = [
             "Much better than the larger courses in first year, much more engaging",
@@ -197,7 +197,7 @@
             text-align: center;
             padding: 1rem;
             font-family: 'Courier New', Courier, monospace;
-            font-size: 1.5rem;
+            font-size: 16px;
             user-select: none;
             -webkit-user-select: none;
             cursor: pointer;
