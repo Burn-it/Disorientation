@@ -19,16 +19,20 @@
 
     <p class="statement">
         In response to small-class cuts the University of Auckland Administration is cooking up, students have let us
-        know
-        what they think about their small classes. This website presents the collective ideas of over 250 students with
-        over 2230 cumulative months experience (185
-        years!).
-
+        know what they think about their small classes. 
+        <br>
+        <br>
+        This website presents the collective ideas of over 250 students
+        with over 2230 cumulative months experience (185 years!).
+        <br>
+        <br>
         Thank you to all those who have submitted their thoughts about their small classes (which seem to be
         universially loved).
-
+        <br>
+        <br>
         Please continue to send in your thoughts, every response helps us help the university make better decisions.
-
+        <br>
+        <br>
         This website will contiune to be updated periodically.
     </p>
 
@@ -64,7 +68,7 @@
             'over 250 students': `over ${quotes.length} students`,
             'over 2230 cumulative months experience (185 years!)': `over ${cumulative_months} cumulative months experience (${Math.floor(cumulative_years)} years!)`
         }
-        for (pair of Object.entries(pairs)) {
+        for (let pair of Object.entries(pairs)) {
             statement_e.innerHTML = statement_e.innerHTML.replace(pair[0], pair[1])
         }
     </script>
