@@ -15,8 +15,23 @@
 <body>
     <a href="all/">all</a>
     <br>
-    In response to small-class cuts the University of Auckland Administration is cooking up, students have let us know
-    what they think about their small classes.
+
+
+    <p class="statement">
+        In response to small-class cuts the University of Auckland Administration is cooking up, students have let us
+        know
+        what they think about their small classes. This website presents the collective ideas of over 250 students with
+        over 2230 cumulative months experience (185
+        years!).
+
+        Thank you to all those who have submitted their thoughts about their small classes (which seem to be
+        universially loved).
+
+        Please continue to send in your thoughts, every response helps us help the university make better decisions.
+
+        This website will contiune to be updated periodically.
+    </p>
+
     <br>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdW07auSdxHTxcMeKGUPKm22f01GZmb89m9npvpDcsLnp1JYQ/viewform?usp=sf_link"
         target="_blank" rel="noopener noreferrer" style="font-weight: bold; color: #ff7700;">Add your thoughts.</a>
@@ -24,218 +39,34 @@
     <br>
     <br>
 
+
     <div class="wrapper">
         <strong>
             Tap to see what they have to say.
         </strong>
     </div>
-    <script>
-        let render = (quote, i, total) => `
-        <strong>Tap to see more.</strong>
-        <h1 class="question">How is your experience with small courses?</h1>
-        <p class="quote" style="font-size: ${Math.max(0.8, 2.5 - Math.sqrt(quote.length / 150).toFixed(2)) * 16}px">${quote}</p>
-        <br>
-        <span class="position">${i}/${total}</span>
-        <br>
-        `
-        let wrapper = document.querySelector('.wrapper');
-        const quotes = [
-            "Much better than the larger courses in first year, much more engaging",
-            "Fantastic and core to my degree.",
-            "It was wonderful, I took a french class and met lots of cool people there and learnt a lot about the culture and stuff.",
-            "Amazing, Smaller courses provide better education in my opinion, easier to know your peers and lecturers, and my best work came from courses with under 60 individuals",
-            "Most of my linguistics courses (all but one) have probably fit under that criteria and if not are very close to it, however they are very good courses and my favourite part of my degree",
-            "All my courses have been great. Regardless of the amount enrolled, those showing up in my Arts papers are usually smaller than 60, and it still works efficiently. These papers are courses for a reason, cutting them is unreasonable!",
-            "Small courses are far better in terms of class engagement, student-staff interaction, knowledge acquisition, and overall outcome. ",
-            "It was wonderful! I love the experience of a tight-knit small class. I've had the best discussions and interactive sessions in them!",
-            "The small courses have honestly been the most helpful and informative for my learning. I find it much easier to actively participate in a course where you can actually talk to the teacher and the other students in your class - I find it super productive.",
-            "Small classes were really nice, generally taught real indepth into interesting subjects and were generally better learning environments than large classes",
-            "They were/are great experiences - I do a degree which has a lot of very large courses (computer science and statistics majors), and I prefer the more personal experience of smaller courses.",
-            "The majority of the courses I took for my Bachelor of Design were less than 60 students. Having small classes were beneficial for my learning, as they allow for better mentorship from staff within studio sessions. It also allows for the creation of a community of learners, as well as a more effective learning environment. In my smaller classes, lecturers were able to spend more time giving 1 on 1 feedback on our projects, and we were able to have in depth and meaningful feedback from the teaching team. \"These small classes allowed for deep class discussions, which not only further developed our understanding of the topics, but also allowed us to learn and understand different perspectives on said topics.",
-            "I have had studio classes with 80+ students in them and I often felt that I didn’t have enough time to discuss my project with the lecturer, which made it difficult to know specifically where I needed to improve or make changes. This added to my stress levels, as often I had many questions left unanswered, purely due to the time constraints and the number of students enrolled in the class. ",
-            "They were so good, much better than larger courses in terms of forming connections with the lecturer and classmates. It was easier to have discussions in class and for course content to change as we went along to suit the pace of the class. Given that I plan to continue with this subject into postgrad, I've found it to be immensely valuable.",
-            "loved them, got to know my professor better and also the people in my class, especially in my language class. my language class feels like a small family now because we have kept the same cohort ",
-            "I took ArtSchol 100 last semester and this semester and I love it so much. It is so engaging, so informative and not only allowed for me to thrive academically but as a human being in general. It is teaching me so many important skills and the guest speakers that we have most week really enhance my university experience. The fact that it is small is the main reason it is so effective because we get to form tight connections and support each other in our university journey and it gives it a special, unique community feeling that I never get from my other courses. ",
-            "arts scholars is a very precious environment that relies on being small to achieve its purpose. its enchanced my student experience a lot, and has lead to several friendships and connections i couldnt make without it",
-            "Very positive! Small courses provide learning experiences otherwise impossible in larger courses; close student-teacher relations, greater focus and attention on student, and the overall tightness of such a community allow efficient learning in a favourable environment. Teachers are able to focus greater on students, and students are able to learn through a more personalised medium.",
-            "Fantastic, deeply impacted my worldview",
-            "They were very enjoyable. Just because a subject is \"niche\", that doesn't mean that it's without value. I particularly enjoyed my linguistics elective, which was an extremely informative course on a fascinating area of study.",
-            "These courses (being mainly languages as part of my ancient history degree) were highly beneficial to my understanding of other larger courses under ancient history, and the small-scale of them made it easier to collaborate and seek guidance, overall making it an ideal environment in which to learn.",
-            "Stellar! I love how intimate and dedicated the teaching team are and my classmates have all become my friends!",
-            "I learned so much in those small courses and it allowed for more interaction with the class so the lecturer wasn't just talking at you. ",
-            "A smaller and less busier environment is really helpful for learning where you can have more engagement and connections with lecturers and tutors ",
-            "great!!",
-            "Ive enjoyed them more than the bigger courses as I have more meaningful discussions getting to know all class members and staff involved. I learn more and they make me want to come to uni. I have made lifelong friends in these smaller courses. They are the courses that I remember the most, enjoy the most and reccommend the most. My favourite course of all time in my undergrad was maori 230, it was lifechanging and if that course gets cut, that will be heartbreaking for me. ",
-            "The smaller size was great for Better social engagement and more time spent with lecturers to go over course material. Felt I had better experiences in small classes where I was able to go over the material in more detail!",
-            "They are awesome and are all Stage 2 and 3 Physics papers and a few Stage 2 maths papers (Maths 253)",
-            "You feel much more involved with the content being taught and also get to know your lecturer much better it has helped me greatly with understanding the very confusing topics in quantum 335 and 356",
-            "Some of the best teaching I have got from the university.",
-            "Highly positive - smaller class size means that the lecturer can take more time in regards to each student, and it's a much better learning environment due to that. The class is also more tight-knit and it feels much better studying in a class where you can get to know each classmate at least to some degree.",
-            "The small courses made up most of my degrees and they were great. I enjoyed being able to learn about more specialised topics and being able to interact more with academic staff. ",
-            "Amazing as the smaller class allowed for deeper discussions around more frisky topics and deepened bonds between student and the lecturer",
-            "Good; I especially liked having the smaller number of people as it meant everyone was close with one another and teacher to student ratio was perfect.",
-            "Small courses allowed for greater in-depth discussion, helping me to voice my opinions and hear others. Small courses also allowed for more choices in assignments and how I wish to take course material into my coursework. I was able to better understand the material and engage with the content in a more fulfilling way. ",
-            "Majoring in Theology, I find courses are better when smaller, as we can have closer discussion and understanding about these matters.",
-            "The small courses which I have been a part of were essential to me feeling like university was a place where I belonged, and where my individual thoughts and experiences were valued above and beyond my ability to pay fees.",
-            "I loved them! I’ve taken a French course in the summer and am currently taking one now, as well as Arts Scholars. Providing language classes is such an important part of expanding the horizons and perspectives of the population. ",
-            "They're nice and very focused with an environment that feels safer to ask genuine questions ",
-            "Amazing courses. Very important to fine arts courses as the majority of all electives (necessary for the degree) are capped at around 30 students per semester.",
-            "I love the small courses. Most of my courses in educ were under 5 people so perfect for my learning style and all the education courses would be under review. ",
-            "I love my small courses. They're essential to my degree and what I love to do. The learning experience is always way more personalised, I'm more motivated to show up to classes and I achieve better grades. The course content is always really great too, just because not many people take these courses doesn't mean they're not fantastic courses with amazing lecturers!",
-            "These courses are the only ones where I actually learnt anything. Courses with more than 60 students often do not allow a lecturer enough time to teach students at their level and are often more rushed.",
-            "A lot of my personal growth and growth as a mathematician has happened due to these courses. As an aspiring mathematician, University of Auckland already doesn’t offer many courses at first/second year that correctly prepare all of us in our postgraduate studies/ life in academia. They are making sure there will be no good academics who went to the University of Auckland.",
-            "Excellent ",
-            "they are and have been my favourite out of all the courses i've taken",
-            "Important for my major, provided a well rounded learning experience and sense of community ",
-            "Absolutely incredible",
-            "It has been my favourite course I’ve ever taken has given me so much extra knowledge that I otherwise wouldn’t have been able to obtain. I feel as though this course has prepared me for the future unlike any other course I’ve taken and if I hadn’t taken it I likely would be a worse student.",
-            "Excellent- necessary for research-centric and conducive to learning languages",
-            "I loved them! Even though there were less students, I still got the same (if not a better) quality of teaching and was able to experience the full range of subjects that my majors had to offer - it allowed me to guide my future studies. ",
-            "I found the teaching much more involved and enjoyable, it is also easier to ask questions and collaborate with the material, allowing me to learn it better.",
-            "They were awesome for learning and engaging with tutors and material. I felt I made closer connections with my peers that became serious friendships, and I was more inclined to share in and attend classes because of less social anxiety. Overall great experience. ",
-            "So good! The personal experience of a smaller classroom allowed me to engage closer to the subjects. Learning a language requires so much patience and a need for an intimate space to ask questions and collaborate with both my peers, lecturers, and tutors! I would hate for these small and effective learning spaces to be ripped away from myself and other students (current or prospective)!",
-            "They have been amazing, I (and many of my friends) have benefited greatly from a smaller, more intimate environment because it ensures that the Lecturer/Tutor is able to connect to every student and provide extensive support to everyone. ",
-            "Great, allowed for amazing communication and rapport with teacher and the rest of the class. I found I learnt a lot and did very well in the smaller classes because of this",
-            "The small courses are very good because it’s a lot easier to communicate with classmates, and it allows for lots more interaction with the lecturer which makes content much easier to understand",
-            "The smaller classes are often my favourite because I find them more engaging, and I find  it easier to communicate with the other students and the lecturer. I really enjoy being able to discuss the content and bounce ideas off one another.",
-            "Incredible, some of my favourite classes",
-            "I very much enjoyed smaller courses they allowed me to engage with the material and others. It was also essential in learning languages and delving deeper into texts.",
-            "I really enjoyed them, they allowed me to engage further with the school and to build a connection with the students and teacher. I also got higher marks in these classes.", "I learnt far more efficiently in a smaller learning environment. It allowed me to collaborate more efficiently with my peers and to develop important relationships with teaching staff. \"From these small courses I have been able to develop and explore niche research interests that will underpin any further study that I do while they have also allowed me to gain clarity on course content in a way that would be impossible in a bigger class. \"In my experience, small courses form into learning communities in a way that is often suggested, but never realised, in larger courses. Building a network to support each other's learning and wellbeing is vital within a University as big as this one and small courses are one of the only current academic pathways to do this. While clubs and other groups support making friends across the university, I am hard pressed to think of anything more impactful than the small courses I have taken for fostering learning community within a particular academic area, major or  specialisation.\"I am indebted to these small courses for making university more than a place to buy an expensive piece of paper and a genuinely life-changing place to learn. ",
-            "I found the small class sizes of my language courses hugely beneficial for studying a language. Classes with smaller class sizes means more time to practice with the teacher and more collaboration with peers.\"I liked all of them :) it was very engaging with a smaller classroom",
-            "Small courses create a strong class culture that is collaborative and invites an inclusive work environment.",
-            "Superior by far. All my courses for learning ancient Egyptian had less than 20 students and it sickens me that the uni is considering cutting these.", "They say it's not but as far as I'm concerned this is the latest attack on the Arts after the horrid faculty merger.",
-            "Shame on UOA",
-            "Amazing, interpersonal relationships are better, more time delving into deeper content and asking questions, more accessible in terms of disability ",
-            "The smaller the class, the better the quality of teaching. Much more opportunity for dialogue and much more attention from the instructor lead to a) a much more enjoyable learning experience overall, b) a much better understanding of the content. A smaller, more niche class also ensures that every one who is there, wants to be (these are also the courses in which I noticed the highest percentage of attendance).",
-            "Some of my favorite courses at university were under 60 people. It has completely influenced where I have gone with my degree, and why I choose my masters supervisor. Small courses also are where I have made the best friends of my degree and also means it's amazing for generating a sense of a cohort",
-            "The small courses covered chemistry topics that, while more specialised, were integral to my learning and understanding of the subject as a whole",
-            "They were key in a greater understanding of mh choices feild",
-            "for me it helps in learning more and being more engaged with my lecturers/tutors and other students",
-            "These are the best courses in my experience. More engagement and more specific knowledge related to actual jobs and interests",
-            "They've been some of my favourite courses where I have learned the most, either due to being more focused and/or because of the more attentive prof/student relationship.",
-            "Good, I enjoyed the dynamic that was present in a small class",
-            "Amazing",
-            "I thoroughly enjoyed them. It was more hands on and practical. As it was a smaller course it was easier to get personal and individual feedback ",
-            "Very good. The small course allows for a better lecturer and student communication, that helped improve grades and class participation.",
-            "Amazing! Especially in a Bachelor of Arts. The students don’t take the degree specifically to get a directly related technical job. What makes an arts degree so special is how you’re able to pursue your interests through these smaller classes. Through that we get the opportunity to connect with lecturers, other students, and develop oral and written communication skills. They foster a sense of community that’s unimaginable in larger courses and they’re always the favourite ones I take.",
-            "They were the best I've taken. The smaller class sizes meant greater in depth learning opportunities. More diverse teaching techniques were also able to be employed.", "I have had a good experience taking small courses at UoA. I have been taking Linguistics courses. While the stage I papers (LING100 and LING101) were bigger classes, the stage II and III papers I am taking this semester (LING203 and LING324) are smaller. I am enjoying the smaller class settings as it gives me an opportunity to learn in a more personal environment and allows for more in depth discussion with the professor about questions and points of interest to me. ",
-            "They were amazing and engaging ",
-            "Excellent. Smaller courses make for more opportunity to interact with the professor in a meaningful and helpful way in the classroom setting.", "Amazing i feel as if i learnt more, i made friends in the same degree as me i got to know lectures one on one and had personal advice from them on how to steer my studies for a career ",
-            "Much better than the large scale ones, the interactions between lecturer and student are closer and better for learning",
-            "I love small courses! They offer opportunities to build communities, engage with lecturers, and dive deeper into subject material through interactive class conversations and activities. I also feel more supported as a student when I'm in a small course, because the lecturers care about me. This motivates me to attend class, put effort in on assignments, and engage more deeply and critically with course material.",
-            "very good, everyone knows each other and are able to comfortably have class discussions during tutorials",
-            "I loved having the smaller classes. There is MUCH more room for talking, interacting, and connecting with both the teaching staff and peers. An actual sense of community - which is severely lacking across the university as a whole. ",
-            "Amazing, so good, great lecturers and class mates and important bonds made. ",
-            "I take Latin which is quite a small course but it is my favorite. I took it for semester one and got hooked. Not only is it essential to my degree in classical studies, but it is one of the most efficient courses I take. The size of the class makes the learning environment much more enjoyable. It creates community within the class, favoring group work and giving students much more help and assistance for their individual difficulties. ",
-            "These courses (LATIN 100 and LATIN 101) have been my favourite courses thus far. I feel a lot more comfortable in them than my larger courses.",
-            "Great. They are so much more refined for my interests and where I want my career to go. Part of a BA is having the freedom to choose lots of flexible papers in different departments. In smaller courses, I feel like I am much more welcome to speak up in lectures and tutorials and have a closer relationship with my tutors and lecturer.", "I have always preferred small courses as it gives me the chance to talk to the lecturer and get feedback on my work, which is almost impossible with the large courses with 1000 students.", "Really engaging ",
-            "They were really good for getting to know other students and the teachers in music faculty. Really helps you get 1 on 1 feedback and share your work for the class which is vital to creative arts like music composition. ",
-            "I really enjoy them their more specific to topics i’m interested in and I am afforded more opportunities to learn and engage with the topics in lectures and tutorials. and I am able to get more help from my lecturers/tutors because of the smaller class sizes  ",
-            "Small courses and small classes have been the best part of my studies at UoA. Particularly the Arts Scholars Programme. The arts scholars programme (3 years of small courses!) was the core of my undergraduate experience, so much so that I questioned why all courses weren't supported and structured in the same way. The social benefits of this course stood out from the bleary and famously-isolating experience of the University of Auckland, particularly as a first-in-family, from out-of-town, too-broke-to-afford-student-accomodation 19 year old. If it hadn't been for the community offered by the arts scholars programme I would have left for AUT 6 months in–barely understanding the value of a research-focused institution and community. I would never have been paired with my now PhD supervisor as part of an undergraduate research project, and I certainly wouldn't have the same life I do today. I drafted this text as I prepare to go to dinner with my best mate who I met through the programme, and his whānau who have taken me in as their own. The same mate who taught me to cite ideas as I submitted my first ever assignment at university, sitting in the common room allocated to the arts scholars programme. If it weren't for the arts scholars programme I wouldn't even recognise any of the thousands of clever academics and students beyond my own enrolled majors. Our very own Sara Buttsworth connected familiar food fairytales to their historic moment while Siouxsie Wiles connected the wonderful world of micro-biomes to our social and cultural studies of food. This course reaches across the arts and sciences in way that the university likes to promote, but I've failed to see succeed anywhere beyond the Arts Scholars programme. Arts Scholars is where I learnt how to be at uni, how to ask questions that span across disciplines, where I turned to for help planning degrees and my own future (because official support systems are impersonal and unfruitful) and where I was able to find the most amazing role models inspiring who I want to be as a person navigating the world, and templated for me how to be a role model too. So many good things about attending university get taken away from coming generations, because it's so easy to take things from students who don't know what university has been like for everyone else. It came to be accepted that you don't get money to attend university, it came to be accepted that students pay to train for their employment here, it came to be accepted that faculty identities were nonfactors in decision making, it came to be accepted that rankings were the most important attribute of a uni, it has come to be accepted that attending university is a careerist move and is an isolating and lonely experience. Cutting course selection, particularly for small cohorts, is one more step down a dark path that provided a lucky few hope of having not just a uni enrolment, but a uni life. It is one more door shutting off the university as a place of interesting ideas, socialisation and connection with both our fellow citizens and the amazing international communities that higher education brings together. Friendships were started here, relationships were started here, research careers, mentorships, networks, degrees, dreams were all started within these programmes. When I tell people the stories of meeting my best friends, I don't want to footnote the story with how unfortunately the shortsighted administration cut the brightest part of my university experience to save a buck. Hardly world leading decision making.",
-            "They were great and are vital to my degree.",
-            "Amazing! Currently enrolled in arthist224, it’s a combined stage 2/3 lecture with an amazing lecturer who puts a lot of thought into making engaging lectures. I really enjoy the content and am considering seeking further study in this area after I finish my conjoint undergrad!",
-            "Small courses helped my learning immensely - the smaller groups allowed for class discussions and closer bonds formed with other students (and the lecturer). Having lots of smaller classes gives students a variety of options of specialised topics that we would not otherwise learn about. Doing a deep dive learning about specific topics (compared to more generalised papers that brushes over aspects) is much more interesting and relevant to what I would like to get out of our university experience. ",
-            "They were the best courses I’ve ever had. I felt fully supported in them and the teaching staff were engaging. I would not have gotten my degree without them",
-            "Great, learning a language in a smaller learning environment is perfect ",
-            "It was excellent. Being in a smaller class allowed me to build a better connection with my lecturers, tutors, and peers. There was little to no competition compared to my larger classes; everyone helped each other. Smaller classes also made asking questions or even finding out information easier. Smaller classes also had better structure and planning compared to larger classes.",
-            "Excellent (Currently taking Math 254 with enrolment under 60) ",
-            "Fantastic - the workload was more tailored to the demands of students because many were beginning to specialise in the course's major and thus students had overlap with other courses. Tutorials and question time in lectures were much more intimate and effective, and Socratic teaching was actually possible and conducive to better faculty-student and student-student action and connections.",
-            "All were brilliant. Without a doubt, the patrimonium omnium gentium.",
-            "Very positive",
-            "Positive ",
-            "very nice - it is easier to facilitate discussion and share ideas. It is easier to pay attention when a setting is more involved. ",
-            "More fun than large courses, more engaging, better relationships with peers and teaching staff, provides a more immersive and student focused experience.",
-            "Really good and such a privileged opportunity to be in a small course where it is easier to connect with lecturers and Students. It gave me an opportunity to explore my research with interests (arts scholars) which you don't get much of that in another big courses. It has opened my mind to learning so much more of the world and understanding what postgrad potentially would be like. It has also formed a community which the in a massive university is really extremely difficult to find. ",
-            "They were far and away my favourite courses. I learnt the most, connected with my peers and the academic staff, and felt the most deeply connected to the university. I would not have stayed studying here for so long if I hadn't had that connection. These courses were the norm for me in my language classes and my Classics classes beyond stage I courses, and they are the reason I loved my degree. I would not have done postgrad without them. In postgrad, small classes allowed me to actually ask questions and engage with course material deeply, which meant I got good grades and kept studying. I also made lifelong friends and got to know the department lecturers well. I loved my small class experience, and the idea of other people not getting the same opportunities as me, when they should be absolutely safe-guarded in a tertiary institution, makes me furious.",
-            "The smaller classes were excellent and I learnt better, I felt that I could engage with the content and the lecturer more effectively. ",
-            "Brilliant, small class sizes create much better learning environments. Most of the 11 undergrad classes that were definitely under 60 (some others were probably not far off) were either language or drama classes, and the most challenging language classes I took were the first semester and/or gen ed ones with too many students and not enough time to ask questions or focus on individual learning (which is crucial with languages, if you can't talk through where you're going wrong or have time to have it explained a different way then you are completely stuck). The core drama course (202A&B) was almost too big actually, for staging a full length play, and if 20 students were the maximum allowed into that course it would be more beneficial for students.",
-            "This form asks about undergrad classes specifically, but the information on the reddit post mentioned that postgraduate classes are being considered as well, so I shall comment on them too. There are 8 people in my Classics & Ancient History Honours cohort, and this size is pretty much perfect for effective learning. For the first 9 weeks of semester 1, we had a class with the History honours/ masters students, which had around 20 or so in their cohort, and it was so much more difficult to get involved in the discussion expected and required at postgraduate level in a class of that size, around 30. I don't know how they all manage to maintain a good relationship with their supervisors since there are so many of them and only so many staff available for supervision, but I am sure that if there were any more postgrad classics students for the 6 members of the C&AH faculty to supervise then our work would be poorer as a result. ",
-            "Very positive. Moderately sized tutorial groups allowed for more involved teaching and connection between tutors and the class, along with more of a group environment as you knew everyone in the group as a whole. This was conducive to attention in both lectures and tutorials, while also encouraging more effort for assignments and study as a whole",
-            "I LOVED it, it felt way more closer and I got A+ overall which was heavily due to feeling so close with not only the lecturer but the students as well",
-            "Excellent. Small courses were vital for equipping me with the tools, especially language-related, to pursue my present advanced studies. ",
-            "The course I take are in part my interest and or a requirement to meet my degree requirements. I have found it difficult to find papers that cover the areas I’m interested in such as ethics papers in philosophy and social anthropology ",
-            "Was still able to get the best out of my learning and the small class created a friendly environment. ",
-            "Great ",
-            "Wonderful, life-changing, career-changing",
-            "Wonderful, really really great having lectures and discussions with smaller numbers of people. Tutorials in larger courses cannot replace smaller course sizes, as in a smaller course the way content is taught is fundamentally different. Relationships between students and staff are much closer, and it is much easier to feel like you can ask for help. Student relationships are also closer, and it is much easier to grow relationships with your classmates as the people you see in lectures are more often the people you chat with in tutorials and vice versa.", "Amazing- my degree has been made up almost entirely of small, specialist courses, all of which I have loved. Smaller classes, especially in a postgrad setting as a current Honours student, have enabled greater contributions and discussion from myself and fellow students. It has also fostered better connections between students and teaching staff; I feel unbelievably grateful for the individualised help and support I have received from my lecturers, who in turn have helped me to achieve my best and inspired me to pursue my studies further and with unbridled passion and enthusiasm. Smaller classes have additionally aided me to form better personal connections with my fellow students- at Honours level, we have now become a distinct, close-knit community of scholars. ",
-            "It's been my favourite course so far this year",
-            "Great ",
-            "They work well and you get to meet and work with other people much easier than in larger courses ",
-            "Small courses massively improved my learning, through a more personal learning experience, and ability to study more specific areas especially in 3rd year courses",
-            "They provided critical learning skills that would not be possible with larger classes. The ability to foster a community with your classmates in order to focus on specific topics is not something that should be abolished in order to maximise profits, or to streamline courses. ",
-            "Arts Scholars was actually part of the reason I came to UoA, both because it seemed very interesting and valuable, and because of the community it provides. It's been a really enjoyable class, especially this first year when I didn't know anyone at the university. It feels way more like a community, and we can have more in depth discussions which help our understanding more than simple lectures. We also allow for more focused learning since small class sizes mean everyone involved is super keen to get involved. ",
-            "Had some of the best classes in these courses, learned heaps and made heaps of friends, really great experiences.",
-            "amazing",
-            "I think they are really good as you have a better connection to the lecturer and the lecturer is able to cater the learning of the course to what students are struggling with more efficiently. In a smaller course, there are less students for the lecturer to worry about with regards to understanding the course content", "Very good. I really appreciate the lecturers' dedication in the smaller courses. The passion they have for the subjects they teach is inspiring. ",
-            "I was a Tertiary Foundation Certificate student and am an Arts Scholars student. Both programmes have been invaluable to me! Yes, to my learning and career when I ultimately graduate with my degree, but more so to my character. I am a better academic because I have completed these programmes, but more importantly, I am a better person. If future students lose the opportunity to do all of the TFC courses I did or cannot take part in Arts Scholars, I will be devastated.",
-            "Lecturer dependent but generally good group energy and helpful for making friends.",
-            "Fantastic, the in-depth learning and guidance given could not be replicated in any way with a larger class.",
-            "Great course, high quality engagement with lecturer, and allowed a niche subject - Greek philosophy.",
-            "I find small courses tend to be a better learning experience than large classes. It means you can have a more personal relationship with the lecturer and engage with the content better",
-            "The smaller student body was beneficial for developing our skills (as the lecturers were able to dedicate more time one-on-one and cater their material to their heir specific group of students) and for developing relationships with other students. Having a smaller cohort made things a lot more personal and enjoyable.",
-            "Small courses have allowed for more one on one and small group training which has been integral to my creative arts degree. That level of mentorship is incredibly important for a music degree",
-            "I love them. The discussion-oriented, small-group style of lecture is by far my favourite, and prepares students well for professional and postgraduate contexts. Small courses are a vital component of my degree and experience here, and cutting them would be a horrific misjudgement from administration and feels entirely out-of-touch with student perspective and voice. I have made best friends through small courses, and suit my learning preferences very well.",
-            "Fine",
-            "Difficult to enrol in as quite a lot of courses under arts / area studies have low attendance counts which means some courses are only available every 3-4 years with 30 seats max at the worst .",
-            "I enjoyed these courses much more than large ones. We were able to have much more human relationships with lecturers/teachers and TAs, engage in meaningful discussion, and form more of a tight-knit class. ",
-            "Small classes allow much more efficient learning, and make for a more enjoyable, productive and logistically better semester ",
-            "Very very good. LOVE SMALL COURSES! ",
-            "I generally found it easier to make friends and associate with peers, as well as approach teaching staff. I also enjoyed some of them the most! It’s valuable to your learning spending time in a smaller course",
-            "Excellent",
-            "Absolutely amazing, they were my third year maths courses and I would be really sad if I would not be able to learn in that environment. We are paying a fortune to attend here with some of the world's best lecturers, they should have the platform to teach courses even if they are small, especially if they are in final year. Don't generalise and centralise everything. We're a specialist society.",
-            "i loved them and they have been some of my favourite courses to date ",
-            "Being in a small course was very beneficial for the type of courses I took. My required language courses for the global studies part of my degree were much more productive when I was able to be in a classroom environment with limited numbers so that I could effectively communicate with my peers and teacher.",
-            "Very insightful, most of the composition courses have a very small amount of people as the stages progress which encourages more fruitful discussion and more close bonds. ",
-            "Loved them and consider them integral to where I am today ",
-            "These courses were the most valuable of my degree, ultimately shaping the course of my career. It was these courses, the smaller and more 'niche' papers that sparked my interest in postgraduate/further study. My research interests were developed in small courses.",
-            "Love the class! the smaller the class the better and more help from staff! honestly the best!",
-            "It’s an incredibly valuable course taught by an incredibly passionate team.",
-            "The small courses were more niche and meant we could dig into super intriguing topics that were specifically what I enjoyed. Broadening the courses will end up with students not truly learning anything at all, as we'll barely scratch the surface without the opportunity to actually dig deeper. I loved the small class environments and ability to share our thoughts collectively. We had such close-knit community experiences in these small classes that really enhanced our learning.",
-            "Incredibly positive; well-taught, engaging, and thought-provoking. The reflective, philosophical, and humanity-oriented nature of arts cannot be replicated elsewhere, nor could it be imparted should classes be shifted to a more blended or online approach as changes risk. Arts requires thorough, interactive, in-person teaching and the security in their existence necessary for future students to follow their passion into arts, rather than choosing conservatively for fear their academic future could be undermined by their own learning institution.",
-            "Fantastic",
-            "My small french classes have been the most fulfilling part of my degree.I always look forward to going to class! I have been able to get to know my classmates and teacher which has created a positive environment for language learning where I feel comfortable to speak and participate.As a result, my french has improved!",
-            "Great. It is a great experience where it feels more close to the students and is unbelievably helpful for me who has difficulty learning in large class environments",
-            "Great. It is a great experience where it feels more close to the students and is unbelievably helpful for me who has difficulty learning in large class environments",
-            "they were really good, i get a lot more out of smaller group sessions because the discussion can flow easier and less time is wasted wrangling a big class",
 
-            "The small courses are niche but absolutely essential for a deeper understanding on specific topics. Not only that, it provides a closer relationship with the lecturer and their passion. As students, we can feel that passion. Having course cuts is not going to do anything but limit our knowledge.",
-            "They were incredible and invaluable to my learning",
-            "I absolutely loved them. The course I’m currently doing is a small one and I got told by the lecturer that the class may be cut. I love coming to uni now because these are classes I genuinely enjoy, to the point where I have to rewatch the lecture to write notes because I’m too occupied listening. You get to know your peers a little more as they’re usually always the same faces, and the class is more interactive and easy to engage in because of its size. ",
-            "Excellent, the small number of students meant I could contact the lecturers easily and have a closer relationship with fellow students ",
-            "Excellent. Small course provide a constant opportunity to uncover and discuss the nuance of the topics we are covering. They provide greater support, which as shown by research, generates better educational outcomes. ",
-            "It was very good, my degree means there’s a high level of specialisation and therefore small classes with experienced teachers.",
-            "They were some of my favourite courses. The smaller sizes enabled more interaction with one another and the lecturer/tutors.",
-            "Korean 205 is currently really good, I'm learning quite a lot and the course is extremely engaging. It's important to learn Korean media literacy to provide an understanding of Korean history, culture and society and can open the door to understanding wider East Asian culture.",
-            "Asian 200 was very eye-opening, it made me re-think about myself and understand a lot of things and perspectives around me. I felt that I learnt a lot about myself, how I thought about my identity and how others perceive Asian identity as a whole. ",
-            "For one of the courses i took when i was doing TFC and i really enjoyed it. As for Chinese 306, i wabt to do sonething in translation once I graduate and this course really helped me understand what translating and interpreting is. ",
-            "amazing!! all of my favorite courses so far have been the smaller ones. much better at teaching and helping students. ",
-            "more effective ",
-            "I’m glad i was able to take them as they all interested me",
-            "Very good, the smaller number meant the lectures could be more interactive, and i felt there was more pressure to do the work and do it well.",
-            "So worth it. It enables you to really connect with the lecturer and your fellow students. Many of the smaller courses are arts courses that enable people to learn about the world and how to make it a better one. ",
-            "I felt i learned more with small courses and had meaningful conversations with tutors/lecturers",
-            "Brilliant, better than bigger ones",
-            "They are wonderful classes to learn in. The small class sizes foster an environment of collaboration and kinship with others. Making frienda ar university can often times be difficult considering the usually massive cohorts and the fast pace of it all, and having the opportunity to actually connect with your classmates is a welcome change.",
-            "They’re helpful and engaging and facilitate better relationships between students and teachers. They also facilitate more dialogue as people are generally less willing to speak in larger groups. Small courses and classrooms are conducive to a productive and engaging learning environment.",
-            "The courses were great, really valuable and learnt more in general than in large courses because we could spend more time with the lecturers, TAs, etc. ",
-            "I really enjoy small course, it is more comfortable to share opinions and ideas and I feel the quality of teaching is more personal which I like.",
-            "Very good! some courses need to be small (like language) to be taught effectively",
-            "Out of all the papers I am doing, the small courses are the ones I look forward to most. Because the class is small, it felt like my individual learning needs are met due to being able to interact closely with the lecturer and other students. ",
-            "I loved my smaller courses and I had a great experience in them as it was easy to discuss things with lecturers and/or tutors. It also meant that I had a genuine interest in all my courses because I was able to choose based on what I prefer to study, which in a field such as history can be hugely varied and therefore important to have choice. ",
-            "Small courses are in my opinion a much better way of learning. There is more opportunity for class discussion and one-to-one teaching time. ",
-            "They were amazing courses. Both were gen ed but I really enjoyed them.",
-        ];
+    <script type="module">
+        import { renderQuote } from 'burn-it.github.io/Disorientation/small-classes/util.mjs'
+        import data from 'burn-it.github.io/Disorientation/small-classes/data.mjs'
+        const quotes = data['small-class-experiences']
+        const cumulative_months = data['study-time-months'].reduce((a, b) => a + b, 0)
+        const cumulative_years = cumulative_months / 12
+
+
         document.body.addEventListener('click', (event) => {
-            // if a link or child of a link was clicked, do nothing
-            if (event.target.tagName === 'A' || event.target.closest('a')) {
-                return;
-            }
-
-            const i = Math.floor(Math.random() * quotes.length);
-            // i = quotes.findIndex(q => q.length > 1200);
-            const quote = quotes[i];
-            wrapper.innerHTML = render(quote, i + 1, quotes.length);
+            if (event.target.tagName === 'A' || event.target.closest('a')) return;
+            document.querySelector('.wrapper').innerHTML = renderQuote(quotes, Math.floor(Math.random() * quotes.length));
         });
+
+        const statement_e = document.querySelector('.statement')
+        const pairs = {
+            'over 250 students': `over ${quotes.length} students`,
+            'over 2230 cumulative months experience (185 years!)': `over ${cumulative_months} cumulative months experience (${Math.floor(cumulative_years)} years!)`
+        }
+        for (pair of Object.entries(pairs)) {
+            statement_e.innerHTML = statement_e.innerHTML.replace(pair[0], pair[1])
+        }
     </script>
     <style>
         body {
