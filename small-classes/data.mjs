@@ -521,7 +521,23 @@ Loved them[NEWLINE]
 Great experience, found the classes to be very productive. Was able to have valuable discussions in class and in office hours. I liked that the lecturer was giving us feedback on assignments directly rather than a TA.[NEWLINE]
 They were really great, I really enjoyed the content of all of these courses. Sometimes the smaller classes allowed the lecturer to get to know us on a more personal level, which really helped with the delivery of the course.[NEWLINE]
 [NEWLINE]
-I took infosys 310 last semester this year, it is a one year course but only 15 students took it (the maximum number of students in the course) It gave me an internship in a real industry in New Zealand, applying what I learned in school. I think I learned more in this course than in 10 so-called large classes.[NEWLINE]`
+I took infosys 310 last semester this year, it is a one year course but only 15 students took it (the maximum number of students in the course) It gave me an internship in a real industry in New Zealand, applying what I learned in school. I think I learned more in this course than in 10 so-called large classes.[NEWLINE]
+The small courses I've taken have been the most beneficial to me. One particular course, LATINAM 301, was the most impactful course I've taken, that introduced me to Latin American and social studies, and changed my perspective on academia itself (as a recovering STEM student). I wouldn't be doing this survey if that course didn't have such an impact on me, I hate doing things like this but never has it been so important. As an arts student, the small courses I'm doing are those which are most interesting and relevant to me and my career path, and those which I've just enjoyed most and gained the most from.[NEWLINE]
+[NEWLINE]
+Small courses allow more connection with fellow students as well as our professors. I've been more involved in these classes than my larger ones and this has definitely impacted my engagement with the courses and my learning.[NEWLINE]
+I enjoyed the intimacy of smaller courses- I found it easier to keep up and was more confident asking for help and support from lecturers and tutors. Smaller courses also allowed me to diver into further depths of interest with ideas and concepts surrounding them, which fueled my interest in niche and general areas.[NEWLINE]
+I find it is easier to participate and discuss in small courses, which really helps with learning. Small groups tend to feel more supportive and are more engaging, it would be a shame to cut them. I have learnt an incredible amount from these small courses.[NEWLINE]
+Very nice, some of them are like a familt bondinf experience.[NEWLINE]
+They have been the highlight of University experience and the only time I did not simply feel like a ‘number’ and instead like a human being[NEWLINE]
+great[NEWLINE]
+I am a Maths student so pretty much all of my courses are small courses. They are all great courses with great professors. I think that other majors would benefit greatly from all of these courses.[NEWLINE]
+I enjoyed the small classes as it allowed for more one on one help and aided in whanaungatanga with students and lecturers. It made it feel like they wanted us to succeed and that we weren’t alone in this journey of acquiring our degrees[NEWLINE]
+I cannot EVER imagine a Japanese/Spanish paper being taught in large classes, this would be horrible for engagement and learning environment.[NEWLINE]
+They have been the highlight of University experience and the only time I did not simply feel like a ‘number’ and instead like a human being[NEWLINE]
+Nice and focused good vibe[NEWLINE]
+Great opportunity to learn about niche feilds particularly in anthropology[NEWLINE]
+they attended to align more with my interest and I had a much better time at uni because of it[NEWLINE]
+These small courses are from anthropology which because it’s under arts it’s more likely to experience cuts which is plain unfair. The best experiences I’ve had learning is from these small unique courses. I’m still upset about anthro 109 which inspired me greatly in my current path. I feel awful for these incredible lecturers who want to educate the incoming generation of learners.[NEWLINE]`
         .split('[NEWLINE]').map(x => x.trim()).filter(x => x),
     'change-affect': `Trim Affect
 more specialised courses (i.e. not feeding into the main research pipelines) being cut could close of pathways for students and force them into a reduced set of specialties. Not to mention the university using this to further justify their campaign against the already beleaguered arts faculties[NEWLINE]
@@ -815,5 +831,23 @@ Would mean a lot less opportunities and further growth of learning[NEWLINE]
 Wouldn't have been able to learn some of the more technical and specialized things that have been useful in my career.[NEWLINE]
 I am graduating soon, however if I were to keep studying the course would impact quite a few of the Global Studies courses I am required to take, particularly in the language and area studies aspect, which are fixed requirements for my degree.[NEWLINE]
 electives that i wanted to take[NEWLINE]
-This class will be canceled after I finish it, and while it won't affect me, I still feel that it is one of the best courses at UOA. I feel bad if students after me are not able to learn about such a great course![NEWLINE]`.split('[NEWLINE]')
+This class will be canceled after I finish it, and while it won't affect me, I still feel that it is one of the best courses at UOA. I feel bad if students after me are not able to learn about such a great course![NEWLINE]
+It already looks like I won't be able to complete my degree due to cost cutting in the Spanish and Latin American departments. If any more small courses are axed, I might as well just give up on my degree.[NEWLINE]
+Probably not but is still good to have small course for others[NEWLINE]
+"It would cut majority of GISCI papers and a significant portion of relevant geography papers in Bachelors. It would cut off any opportunity for me to pursue PostGrad in Environmental Science.
+
+This course cutting would effectively cut entire majors in the School of Environment. As a top university in Auckland, it would be incredibly disappointing to limit the capacity to teach an important and relevant subject[NEWLINE]"
+While it may not affect me as much, I am worried that my friends doing arts courses may have to compromise their enjoyment of papers and conglomerate with a larger cohort with fewer chances of support. I worry about both majors, especially since geography, as both a science and arts major, may be affected by the restructuring. In my current position, I fear the cuts may risk reducing the market further than what it was for the skills I have gained, and I will lose the network of connections I have fostered throughout my years here.[NEWLINE]
+There are courses I want to (and have to) take in order to complete my degree and this would affect me greatly. More niche subject areas are equally as important!![NEWLINE]
+Go somewhere else that offers the supposedly cut courses.[NEWLINE]
+I won’t be able to continue on with postgraduate studies, given the reason I am completing my degree is to get into research and development my entire degree with the university in my eyes will be a massive waste[NEWLINE]
+if they cut the linguistics papers (there are already barely enough to get through a degree) i will probably drop out and go to a different uni where they give a shit about arts students[NEWLINE]
+It would greatly affect every maths major if any number of these courses are cut. It would also affect all students who study any discipline that uses maths. I am strongly opposed to any cuts in the courses that are being offered currently, as they are all important courses.[NEWLINE]
+I’m in my last semester so the affect would not concern me I more or so wanted to fill this out because I know without these smaller classes I would have struggled to finish my degree as there are not many options in Māori Studies if you took those small classes out. I basically know my Māori studies cohort as we came through together and it’s always the same mix of people. It would have affected a lot of us if this had happened earlier and for that I wouldn’t want those who are still in their degree or wanting to pursue this degree but opts not to because there are lack of classes available for them to complete it.[NEWLINE]
+This would deal a heavy blow to my learning process and significantly cut out my interest and engagement in class.[NEWLINE]
+I won’t be able to continue on with postgraduate studies, given the reason I am completing my degree is to get into research and development my entire degree with the university in my eyes will be a massive waste[NEWLINE]
+One of my current classes would get cut and potentially some later year classes would be cut as they often have less[NEWLINE]
+It would significantly impact my ability to graduate with a bachelors in anthropology and would likely make postgraduate studies in my field impossible at UOA[NEWLINE]
+it would make my experience much worse at uni, but I would graduate the same[NEWLINE]
+These cuts could affect my choices next year as third year Anthropology courses are being targeted. It’s really hard avoiding clashes with biology and I really want anthropology to be my main subject, this slashes could impact my chances of graduating with the choices I wanted.[NEWLINE]`.split('[NEWLINE]')
 }
