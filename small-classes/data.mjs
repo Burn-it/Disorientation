@@ -234,7 +234,7 @@ export default {
 48
 24
 36`.split('\n').map(parseInt).filter(x => !Number.isNaN(x)),
-    "small-class-experiences": `Trim Experiences
+    "small-class-experiences": `
 Much better than the larger courses in first year, much more engaging[NEWLINE]
 Fantastic and core to my degree.[NEWLINE]
 It was wonderful, I took a french class and met lots of cool people there and learnt a lot about the culture and stuff.[NEWLINE]
