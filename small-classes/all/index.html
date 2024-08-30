@@ -43,6 +43,11 @@
         `
         let wrapper = document.querySelector('.wrapper');
         wrapper.innerHTML = quotes.reduce((acc, quote, i) => acc + render(quote, i + 1, quotes.length), '');
+        // if there is a hash in the url, only show that quote
+        if (window.location.hash) {
+            const i = parseInt(window.location.hash.slice(1)) - 1;
+            wrapper.innerHTML = render(quotes[i], i + 1, quotes.length);
+        }
         // document.body.addEventListener('click', () => {
         //     const i = Math.floor(Math.random() * quotes.length);
         //     const quote = quotes[i];
